@@ -19,6 +19,13 @@
     "@angular/platform-browser": "~8.2.8",
     "@angular/platform-browser-dynamic": "~8.2.8",
     "@angular/router": "~8.2.8",
+    "@ngx-translate/core": "^12.1.2",
+    "@ngx-translate/http-loader": "^4.0.0",
+    "@progress/kendo-angular-common": "^1.0.0",
+    "@progress/kendo-angular-l10n": "^2.0.0",
+    "@progress/kendo-angular-layout": "^4.2.3",
+    "@progress/kendo-theme-default": "latest",
+    "ng-http-loader": "^7.0.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
