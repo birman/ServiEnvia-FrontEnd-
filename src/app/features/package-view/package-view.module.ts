@@ -8,6 +8,7 @@ import { PackageViewComponent } from './package-view.component';
   declarations: [PackageViewComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [PackageViewComponent]
 })
 export class PackageViewModule { }

@@ -8,6 +8,7 @@ import { CustomerViewComponent } from './customer-view.component';
   declarations: [CustomerViewComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [CustomerViewComponent]
 })
 export class CustomerViewModule { }

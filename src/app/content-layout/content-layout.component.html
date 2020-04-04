@@ -1,24 +1,80 @@
-<nav class="navbar navbar-light bg-light nav-bar-padding">
-  <span class="navbar-brand mb-0 h2 padding-navbar-h2" translate>Servi Envia</span>
-  <span class="navbar-text" translate><i>Copyright 2020 © Victor Espitia - Birman Cardona</i>
+<!-- <nav class="navbar navbar-primary bg-primary nav-bar-padding bg-color">
+  <span class="navbar-brand mb-0 h2 padding-navbar-h2 bg-color" translate>Servi Envia</span>
+  <span class="navbar-text bg-color" translate><i>Copyright 2020 © Victor Espitia - Birman Cardona</i>
     V1.0 200.01
   </span>
-</nav>
+</nav> -->
 
-<div class="container-fluid my-3">
-  <kendo-tabstrip>
 
-    <kendo-tabstrip-tab [title]="'CLIENTE'" [selected]="true">
-      <ng-template kendoTabContent>
+<header>
+  <div class="bg-dark collapse bg-color" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-primary bg-primary box-shadow">
+    <div class="container d-flex justify-content-between bg-color">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg> -->
+        <strong class="bg-color">Servi Envia</strong>
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
 
-      </ng-template>
-    </kendo-tabstrip-tab>
 
-    <kendo-tabstrip-tab [title]="'PAQUETES'" >
-      <ng-template kendoTabContent>
 
-      </ng-template>
-    </kendo-tabstrip-tab>
 
-  </kendo-tabstrip>
-</div>
+
+
+
+<body class="bg-white">
+
+  <div class="container">
+    <div class="container-fluid my-3">
+      <kendo-tabstrip>
+
+        <kendo-tabstrip-tab [title]="'CLIENTE'" [selected]="true">
+          <ng-template kendoTabContent>
+            <app-customer-view></app-customer-view>
+          </ng-template>
+        </kendo-tabstrip-tab>
+
+        <kendo-tabstrip-tab [title]="'PAQUETES'">
+          <ng-template kendoTabContent>
+            <app-package-view></app-package-view>
+          </ng-template>
+        </kendo-tabstrip-tab>
+
+      </kendo-tabstrip>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">© 2020 @Copyright Victor Leandro Espitia - Birman Cardona</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="https://servienviaapi.azurewebsites.net/">ServiEnvia API Azure</a></li>
+        <li class="list-inline-item"><a href="https://github.com/birman/ServiEnvia/">Git repository ServiEnvia API REST
+            code</a></li>
+        <li class="list-inline-item"><a href="https://github.com/birman/ServiEnvia-FrontEnd-/">Git repository ServiEnvia
+            FrontEnd code</a></li>
+      </ul>
+    </footer>
+  </div>
+
+</body>

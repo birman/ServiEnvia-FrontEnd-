@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from '@progress/kendo-angular-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { CldrIntlService, IntlModule, IntlService } from '@progress/kendo-angular-intl';
 
 // import { NgHttpLoaderModule } from 'ng-http-loader';
 
@@ -17,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     LayoutModule,
     BrowserAnimationsModule,
+    // IntlModule
     // NgHttpLoaderModule.forRoot(),
   ],
   providers: [],

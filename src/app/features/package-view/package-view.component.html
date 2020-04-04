@@ -1,1 +1,104 @@
-<p>package-view works!</p>
+<div class="py-5 text-center">
+  <h2>Formulario Paquete</h2>
+  <p class="lead">Ingrese los siguientes datos</p>
+</div>
+
+<div class="row">
+
+  <div class="col-md-12 order-md-1">
+    <h4 class="mb-3">Paquete</h4>
+    <form class="needs-validation" novalidate="">
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="firstName">Cedula cliente</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+          <div class="invalid-feedback">
+            Valid first name is required.
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="lastName">Cedula destinatario</label>
+          <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+          <div class="invalid-feedback">
+            Valid last name is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="firstName">Nombres destinatario</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+          <div class="invalid-feedback">
+            Valid first name is required.
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="email">Apellidos destinatario <span class="text-muted"></span></label>
+          <input type="email" class="form-control" id="email" placeholder="">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="firstName">Ciudad de origen</label>
+          <select class="custom-select d-block w-100" id="country" required="">
+            <option value="">Ciudad de origen</option>
+            <option>Manizales</option>
+            <option>Pereira</option>
+            <option>Armenia</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="lastName">Ciudad de destino</label>
+          <select class="custom-select d-block w-100" id="country" required="">
+            <option value="">Ciudad de destino</option>
+            <option>Manizales</option>
+            <option>Pereira</option>
+            <option>Armenia</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="firstName">Valor asegurado</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+          <div class="invalid-feedback">
+            Valid first name is required.
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="lastName">Peso</label>
+          <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+          <div class="invalid-feedback">
+            Valid last name is required.
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="firstName">Estado paquete</label>
+          <select class="custom-select d-block w-100" id="country" required="">
+            <!-- <option value="">Choose...</option> -->
+            <option value="Pendiente">Pendiente</option>
+            <option>Recolectado</option>
+            <option>Enviado</option>
+            <option>Entregado</option>
+          </select>
+        </div>
+
+      </div>
+
+
+      <hr class="mb-4">
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Registrar nuevo paquete</button>
+    </form>
+  </div>
+</div>
