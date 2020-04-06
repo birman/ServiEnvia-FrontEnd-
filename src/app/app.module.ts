@@ -13,10 +13,7 @@ import { ApplicationSettingsService } from './services/app-settings.service';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { InputsModule } from '@progress/kendo-angular-inputs';
 import { DialogsModule } from '@progress/kendo-angular-dialog';
-
-
-
-// import { CldrIntlService, IntlModule, IntlService } from '@progress/kendo-angular-intl';
+import { PackageService } from './services/package.service';
 
 // import { NgHttpLoaderModule } from 'ng-http-loader';
 
@@ -39,7 +36,8 @@ import { DialogsModule } from '@progress/kendo-angular-dialog';
   ],
   providers: [BaseHttpService,
     CustomerService,
-    ApplicationSettingsService
+    ApplicationSettingsService,
+    PackageService
    ],
   bootstrap: [AppComponent]
 })

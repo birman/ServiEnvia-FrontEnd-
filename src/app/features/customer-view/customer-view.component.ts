@@ -27,9 +27,6 @@ export class CustomerViewComponent implements OnInit {
   initCustomers() {
     this.newCustomer = new Customer();
     this.customer = new Customer();
-    this._customerService.getAll().subscribe((data: Customer[]) => {
-      this.allCustomers = data;
-    });
   }
 
   public dialogOpened = false;
@@ -54,7 +51,7 @@ export class CustomerViewComponent implements OnInit {
   public mask: string = "000-0000000";
 
   public saveCustomer() {
-    this._customerService.saveClient(this.newCustomer).subscribe((_customer: Customer) => {
+    this._customerService.saveCustomer(this.newCustomer).subscribe((_customer: Customer) => {
       this.customer = new Customer();
       this.response = "Cliente registrado"
       this.dialogOpened = true;
@@ -77,9 +74,6 @@ export class CustomerViewComponent implements OnInit {
       this.response = "Cliente no se encuentra registrado"
       console.error(error);
     });
-
-
-
   }
 
 }

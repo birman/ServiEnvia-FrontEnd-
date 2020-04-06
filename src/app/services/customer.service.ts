@@ -18,7 +18,7 @@ export class CustomerService {
     return this._baseHttp.get<Customer>("/Customer/" + id);
   }
 
-  saveClient(customer: Customer) {
+  saveCustomer(customer: Customer) {
     return this._baseHttp.post('/Customer', customer);
   }
 
